@@ -1,0 +1,128 @@
+.home {
+    display: flex;
+    background: rgba(26, 112, 155, 0.05);
+    z-index: 1;
+}
+.left {
+    width: 50%;
+    height: 100vh;
+}
+.left img {
+    width: 145%;
+    animation-name: anim;
+    animation-duration: 2s;
+}
+.left h1 {
+    position: relative;
+    bottom: 65%;
+    left: 20%;
+    width: 36%;
+    font-size: 2vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #144761;
+}
+.left p {
+    position: relative;
+    bottom: 65%;
+    left: 20%;
+    width: 50%;
+    font-size: 0.8vw;
+    color: #144761;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    animation-name: anim1;
+    animation-duration: 5s;
+}
+.right {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.right img {
+    width: 70%;
+    position: relative;
+    top: 8%;
+    transition: 0.5s;
+    cursor: pointer;
+    animation-name: anim1;
+    animation-duration: 4s;
+}
+.right img:hover {
+    transform: scale(1.03);
+}
+.right button {
+    background: rgba(26, 112, 155, 0.1);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    width: 18%;
+    height: 4.5vh;
+    color: rgba(26, 112, 155);
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+    transition: 0.5s;
+}
+.right button:hover {
+    background: rgba(26, 112, 155, 0.2);
+}
+@keyframes anim {
+    0% {
+        transform: translate(-50%);
+    }
+    100% {
+        transform: translate(0%);
+    }
+}
+@keyframes anim1 {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+    width: 9px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar for horizontal scroll */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Background color of the scrollbar track */
+    border-radius: 10px; /* Optional: round the corners */
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb {
+    background-color: #467DCF; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Round the corners of the thumb */
+    border: 3px solid #f0f0f0; /* Adds space around thumb */
+}
