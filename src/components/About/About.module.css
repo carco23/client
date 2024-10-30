@@ -73,7 +73,7 @@
 .aboutUs button {
     position: relative;
     left: 10%;
-    top: 17vh;
+    transform: translate(0%, 350%);
     background: rgba(26, 112, 155, 0.1);
     border: none;
     outline: none;
