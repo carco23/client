@@ -20,7 +20,7 @@
   
   .slide-card {
     text-align: left;
-    border: 1px solid #144761;
+    background: rgba(26, 112, 155, 0.05);
     border-radius: 8px;
     width: 45%;
     height: 40vh;

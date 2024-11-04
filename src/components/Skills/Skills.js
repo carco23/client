@@ -72,7 +72,7 @@ function Skills() {
   const prevSlide = () => carouselRef.current.prev();
 
   return (
-    <div className={styles.skills}>
+    <div className={styles.skills} id='skills'>
         <div className={styles.text}>
             <h1>Our Team</h1>
             <p>Team experienced professionals Reforming for Sustainable Impact. We are proficient in:</p>
