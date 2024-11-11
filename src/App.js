@@ -6,6 +6,7 @@ import Contact from './components/Contact/Contact';
 import Navbar from './components/Navbar/Navbar';
 import Skills from './components/Skills/Skills';
 import Highlights from './components/Highlights/Highlights';
+import Services from './components/Services/Services';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <About/>
         <Skills/>
         <Highlights/>
+        <Services/>
       </div>
     </Router>
   );
