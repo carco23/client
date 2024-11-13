@@ -104,13 +104,13 @@
         top: 3%;
     }
     .personCard {
-        width: 45%;
-        height: 25vh;
+        width: 47%;
+        height: 32vh;
         flex-direction: column;
         text-align: center;
     }
     .personCard img {
-        width: 25%;
+        width: 35%;
         margin-top: 5%;
     }
     .name {
@@ -121,24 +121,31 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        bottom: 0%;
     }
     .name h1 {
         width: 150%;
-        font-size: 1.5vw;
+        font-size: 1.8vw;
         transform: translate(0%, 80%);
     }
     .name p {
         width: 150%;
-        font-size: 1.3vw;
+        font-size: 1.6vw;
     }
     .bio {
-        font-size: 1.8vw;
+        font-size: 2.5vw;
+        width: 90%;
+        height: 70%;
     }
     .aboutUs button {
         left: 50%;
         transform: translate(-50%, 0%);
-        width: 18%;
-        height: 2.5vh;
-        font-size: 2vw;
+        width: 25%;
+        height: 4vh;
+        font-size: 2.5vw;
+        border-radius: 20px;
+    }
+    .aboutUs {
+        height: 115vh;
     }
 }
