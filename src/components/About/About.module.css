@@ -86,9 +86,7 @@
     font-weight: 400;
 }
 @media (max-width: 480px) {
-    .aboutUs {
-        height: 135vh !important;
-    }
+
     .text {
         text-align: center;
         width: 100%;
@@ -108,7 +106,7 @@
     }
     .personCard {
         width: 90% !important;
-        height: 50vh;
+        height: 55vh;
         flex-direction: column;
         text-align: center;
         left: 50%;
@@ -154,7 +152,7 @@
     }
     .aboutUs button {
         left: 50%;
-        top: 22%;
+        top: 21%;
         transform: translate(-50%, 0%);
         width: 25%;
         height: 4vh;
@@ -162,6 +160,6 @@
         border-radius: 20px;
     }
     .aboutUs {
-        height: 115vh;
+        height: 140vh;
     }
 }
