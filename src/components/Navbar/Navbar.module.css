@@ -14,8 +14,10 @@
     justify-content: space-around;
     align-items: center;
 }
-
-.navbar img {
+.hamburger {
+    display: none;
+}
+.logo {
     width: 7%;
 }
 
@@ -57,5 +59,25 @@
 @media (max-width: 768px) {
     .navbar {
         width: 100vw;
+        justify-content: end;
+    }
+    .navbarItems {
+        display: none;
+    }
+    .logo {
+        width: 22%;
+        position: relative;
+        right: 20%;
+    }
+    .hamburger {
+        display: flex;
+        margin-right: 48%;
+    }
+    .navbar input {
+        width: 18%;
+        position: relative;
+        right: 7%;
+        height: 30%;
+        font-size: 2vw;
     }
 }

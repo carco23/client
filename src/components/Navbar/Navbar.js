@@ -4,13 +4,15 @@ import { useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import Logo from '../../assets/performatorLogo.svg';
 import { Link } from 'react-scroll';
+import Hamburger from '../../assets/hamburger.svg'
 
 function Navbar() {
   const location = useLocation();
 
   return (
     <div className={styles.navbar}>
-      <img src={Logo} alt="Logo" />
+      <img className={styles.hamburger} src={Hamburger} />
+      <img src={Logo} alt="Logo" className={styles.logo} />
       <div className={styles.navbarItems}>
         <Link to="/" className={location.pathname === '/' ? styles.active : ''}>Home</Link>
         <Link to="aboutUs" smooth={true} duration={500} className={location.pathname === '/about' ? styles.active : ''}>About Us</Link>
