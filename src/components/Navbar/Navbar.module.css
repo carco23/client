@@ -54,3 +54,8 @@
     height: 5px;
     background-color: #BC87D6; /* Change to your desired color */
 }
+@media (max-width: 768px) {
+    .navbar {
+        width: 100vw;
+    }
+}
