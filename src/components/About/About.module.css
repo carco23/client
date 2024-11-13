@@ -106,7 +106,7 @@
     }
     .personCard {
         width: 90% !important;
-        height: 55vh;
+        height: 60vh;
         flex-direction: column;
         text-align: center;
         left: 50%;
@@ -152,7 +152,7 @@
     }
     .aboutUs button {
         left: 50%;
-        top: 21%;
+        top: 20%;
         transform: translate(-50%, 0%);
         width: 25%;
         height: 4vh;
@@ -160,6 +160,6 @@
         border-radius: 20px;
     }
     .aboutUs {
-        height: 140vh;
+        height: 145vh;
     }
 }
