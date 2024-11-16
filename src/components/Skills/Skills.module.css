@@ -62,7 +62,8 @@
 }
 @media (max-width: 480px) {
     .text {
-        top: 7%;
+        margin-top: 30%;
+        top: 5%;
         left: 50%;
         transform: translate(-50%);
         text-align: center;
@@ -72,6 +73,7 @@
     }
     .text p {
         width: 90%;
+        font-weight: normal;
     }
     .text h1 {
         font-size: 6vw;
@@ -79,6 +81,6 @@
         height: 4vh;
     }
     .skills {
-        height: 70vh;
+        height: 80vh;
     }
 }
