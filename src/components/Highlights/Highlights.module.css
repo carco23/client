@@ -115,18 +115,18 @@
         top: -5%;
     }
     .stories div:nth-child(1) {
-        height: 14vh;
+        height: 15.5vh;
     }
     .stories div:nth-child(2) {
         transform: translate(0%);
-        height: 12.5vh;
+        height: 14vh;
     }
     .stories div:nth-child(3) {
-        height: 11vh;
+        height: 12.5vh;
     }
     .stories div:nth-child(4) {
         transform: translate(0%);
-        height: 7vh;
+        height: 8.5vh;
     }
     .story h1 {
         font-size: 3vw;
@@ -140,7 +140,7 @@
     .highlightsImg {
         left: 50%;
         transform: translate(-50%);
-        bottom: 24%;
+        top: -33vh;
         width: 45%;
     }
 }
