@@ -20,8 +20,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <About/>
-        {/* <Skills/>
-        <Highlights/>
+        <Skills/>
+        {/* <Highlights/>
         <Services/>
         <Footer/> */}
       </div>

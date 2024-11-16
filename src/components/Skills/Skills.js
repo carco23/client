@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import styles from './Skills.module.css'
 import Health from '../../assets/Heart.svg'
 import Risk from '../../assets/Risks.svg'
@@ -14,6 +15,14 @@ import './slider.css'
 function Skills() {
 
     const carouselRef = React.useRef(null);
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const slides = [
     [
@@ -68,6 +77,58 @@ function Skills() {
 ]
   ];
 
+  const slides1 = [
+        {
+            key: 1,
+            name: 'Health system strategy & analytics',
+            image: Health,
+            description: 'Health system strategy and analytics are crucial for improving patient outcomes, optimizing resources, and guiding data-driven decisions in healthcare.'
+        },
+        {
+            key: 2,
+            name: 'Risk assessment and mitigation strategies',
+            image: Risk,
+            description: 'Risk assessment and mitigation are essential in business to identify potential threats, reduce losses, ensure stability, and support sustainable growth.'
+        },
+    ,
+    
+        {
+            key: 3,
+            name: 'Government reforms implementation and problem solving',
+            image: Government,
+            description: 'Implementing government reforms and effective problem-solving are vital for fostering economic growth, improving public services, and addressing societal challenges efficiently.'
+        },
+        {
+            key: 4,
+            name: 'Continuous monitoring and feedback assessment',
+            image: Monitoring,
+            description: 'Continuous monitoring and feedback assessment are critical in business for maintaining quality, improving processes, enhancing customer satisfaction, and driving long-term success.'
+        },
+    ,
+    
+        {
+            key: 5,
+            name: 'Human Capital',
+            image: Human,
+            description: 'Human capital is essential in business as skilled, motivated employees drive innovation, productivity, customer satisfaction, and overall organizational growth and resilience.'
+        },
+        {
+            key: 6,
+            name: 'Crisis Management',
+            image: Crisis,
+            description: 'Crisis management is crucial in any business to effectively handle unexpected challenges, minimize disruptions, and protect the organization’s reputation. Proactive planning ensures swift responses.'
+        },
+    ,
+    
+    {
+        key: 7,
+        name: 'Policy Making',
+        image: Policy,
+        description: 'Policy-making is vital in business as it establishes clear guidelines, supports regulatory compliance, enhances operational efficiency, and aligns daily actions with long-term strategic objectives for sustainable growth.'
+    },
+
+  ];
+
   const nextSlide = () => carouselRef.current.next();
   const prevSlide = () => carouselRef.current.prev();
 
@@ -79,12 +140,11 @@ function Skills() {
         </div>
         <div className="antd-slider">
       <Button className="arrow-button" onClick={prevSlide} icon={<LeftOutlined />} />
-
+      {isMobile ? (
       <Carousel ref={carouselRef} dots={{ className: 'custom-dots' }}>
-        {slides.map((slidePair, index) => (
+        {slides1.map((slide, index) => (
           <div key={index} className="slide">
-            {slidePair.map((slide, idx) => (
-              <div key={idx} className="slide-card">
+              <div key={index} className="slide-card">
                 <div className='slider-left'>
                     <img src={slide.image} />
                 </div>
@@ -94,11 +154,29 @@ function Skills() {
                     <a href="#">See More ...</a>
                 </div>
               </div>
-            ))}
           </div>
         ))}
       </Carousel>
-
+)
+: (<Carousel ref={carouselRef} dots={{ className: 'custom-dots' }}>
+  {slides.map((slidePair, index) => (
+    <div key={index} className="slide">
+      {slidePair.map((slide, idx) => (
+        <div key={idx} className="slide-card">
+          <div className='slider-left'>
+              <img src={slide.image} />
+          </div>
+          <div className='slider-right'>
+              <h1>{slide.name}</h1>
+              <p>{slide.description}</p>
+              <a href="#">See More ...</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  ))}
+</Carousel>)
+}
       <Button className="arrow-button" onClick={nextSlide} icon={<RightOutlined />} />
     </div>
     </div>
