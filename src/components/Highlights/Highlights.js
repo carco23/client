@@ -27,7 +27,7 @@ function Highlights() {
                 <li>Analysis and Design Phase – 6 months.</li>
                 <li>Results after 1 year of implementation: significantly improved value for money with the same public expenditure on inpatient services. Compared to the previous year, out-of-pocket (OOP) expenses on inpatient services decreased from 27% to 10%.</li>
             </div>
-            <div className={styles.story} style={{transform: 'translate(60%)'}}>
+            <div className={styles.story}>
                 <img src={CardImage} />
                 <h1>Pharmaceuticals Reference Pricing</h1>
                 <li>External reference pricing introduced by Law on Medicines and Pharmaceutical products on December 1, 2022.</li>
@@ -35,19 +35,19 @@ function Highlights() {
                 <li>Aoverall inflation on medicines (-9%)</li>
                 <li>Prices on antibiotics decreased most by (-41.7%)</li>
             </div>
-            <div className={styles.story} style={{height: '20vh'}}>
+            <div className={styles.story} >
                 <img src={CardImage} />
                 <h1>Pharma Sector Reform</h1>
                 <li>Reforms implemented in the field of pharmaceuticals including reference pricing and managed entry agreements (MEA) enabled the system.</li>
                 <li>To remove annual ceilings on chronic diseases management and cancer care drugs.</li>
                 <li>Substantially reduce financial barriers to chronic disease management and cancer drugs.</li>
             </div>
-            <div className={styles.story} style={{transform: 'translate(60%)', height: '17vh'}}>
+            <div className={styles.story}>
                 <img src={CardImage} />
                 <h1>Health Service Quality</h1>
                 <li>International Accreditation requirement for medical facilities as a prerequisite to participate in state funded health coverage program from 2025</li>
             </div>
-            <div className={styles.story} style={{height: '20vh'}} >
+            <div className={styles.story}  >
                 <img src={CardImage} />
                 <h1>Legislative Work</h1>
                 <li>Law on medically assisted Reproduction / Surrogacy</li>

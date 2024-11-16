@@ -21,8 +21,8 @@ function App() {
         </Routes>
         <About/>
         <Skills/>
-        {/* <Highlights/>
-        <Services/>
+        <Highlights/>
+        {/* <Services/>
         <Footer/> */}
       </div>
     </Router>
