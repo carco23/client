@@ -111,17 +111,20 @@
 
   @media (max-width: 480px) {
     .slide-card {
-      width: 100%;
+      width: 97%;
       height: 25vh;
     }
     .slider-right h1 {
-      font-size: 4vw;
+      font-size: 3.5vw;
     }
     .slider-right p {
-      font-size: 2.7vw;
+      font-size: 3.1vw;
+      position: relative;
+      bottom: 10%;
+      opacity: 50%;
     }
     .antd-slider {
-      width: 90%;
+      width: 100%;
       right: 0%;
     }
     .arrow-button:first-child {
@@ -136,6 +139,7 @@
     }
     .slider-right a {
       left: 60%;
-      font-size: 2.7vw;
+      font-size: 2.9vw;
     }
+    
   }
