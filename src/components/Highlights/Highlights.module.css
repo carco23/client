@@ -80,7 +80,7 @@
 }
 @media (max-width: 480px) {
     .highlights {
-        height: 135vh;
+        height: 150vh;
     }
     .text {
         width: 90%;
@@ -134,6 +134,8 @@
     .story li {
         font-size: 2vw;
         text-align: center;
+        font-weight: bold;
+        color: rgb(140, 140, 140);
     }
     .highlightsImg {
         left: 50%;
