@@ -151,7 +151,6 @@ function Skills() {
                 <div className='slider-right'>
                     <h1>{slide.name}</h1>
                     <p>{slide.description}</p>
-                    <a href="#">See More ...</a>
                 </div>
               </div>
           </div>
