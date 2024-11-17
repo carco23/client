@@ -115,7 +115,7 @@
         top: -5%;
     }
     .stories div:nth-child(1) {
-        height: 15.5vh;
+        height: 16vh;
     }
     .stories div:nth-child(2) {
         transform: translate(0%);
