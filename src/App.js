@@ -22,8 +22,8 @@ function App() {
         <About/>
         <Skills/>
         <Highlights/>
-        {/* <Services/>
-        <Footer/> */}
+        <Services/>
+        {/* <Footer/> */}
       </div>
     </Router>
   );

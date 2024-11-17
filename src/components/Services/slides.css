@@ -108,4 +108,43 @@
   .ant-carousel .slick-dots {
     bottom: -25px;
   }
-  
+  @media (max-width: 480px) {
+  .slide-card {
+    width: 97%;
+    height: 25vh;
+    align-items: center;
+  }
+  .slider-right h1 {
+    font-size: 3.5vw;
+  }
+  .slider-right p {
+    font-size: 3.1vw;
+    position: relative;
+    bottom: 10%;
+    opacity: 50%;
+  }
+  .antd-slider {
+    width: 100%;
+    right: 0%;
+  }
+  .arrow-button:first-child {
+    left: 0px;
+  }
+  .arrow-button:last-child {
+    right: 0px;
+  }
+  .arrow-button {
+    opacity: 70%;
+    display: none;
+  }
+  .slider-right a {
+    left: 60%;
+    font-size: 2.9vw;
+    display: none;
+  }
+  .slider-right {
+    height: 80%;
+    margin-bottom: 5%;
+    overflow-y: scroll;
+  }
+}
