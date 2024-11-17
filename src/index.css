@@ -15,5 +15,6 @@ code {
     monospace;
 }
 .ant-modal-content {
-  background-color: rgb(236, 248, 253) !important;
+  background-color: rgb(245, 250, 252) !important;
+  overflow: hidden;
 }
