@@ -11,7 +11,7 @@ function Footer() {
         <div className={styles.footerItems}>
             <div className={styles.item}>
                 <img src={Email} />
-                <p style={{textDecoration: 'underline'}}>info@performators.com</p>
+                <a href={`mailto:info@performators.com`}>info@performators.com</a>
             </div>
             <div className={styles.item}>
                 <img src={Phone} />
