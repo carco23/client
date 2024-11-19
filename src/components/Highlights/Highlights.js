@@ -2,12 +2,13 @@ import React from 'react';
 import styles from './Highlights.module.css'
 import SeeForYourself from '../../assets/seeForYourself.svg'
 import CardImage from '../../assets/cardImage.svg'
+import { Link } from 'react-router-dom';
 
 function Highlights() {
   return (
-    <div className={styles.highlights}>
+    <div className={styles.highlights} id='highlights'>
         <div className={styles.text}>
-            <h1>See For Yourself</h1>
+            <h1>Our Success Stories</h1>
             <p>
                 Explore our success stories and 
                 witness the impact firsthand. 
@@ -56,6 +57,7 @@ function Highlights() {
                 <li>Labor Code - Labor Inspection Office</li>
             </div>
         </div>
+        <button className={styles.learnMore}><Link to='/highlights'>Learn More</Link></button>
     </div>
   );
 }

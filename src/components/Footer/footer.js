@@ -6,7 +6,7 @@ import Location from '../../assets/location.svg'
 
 function Footer() {
   return (
-    <div className={styles.footer}>
+    <div className={styles.footer} id='contact'>
         <h1>Contact</h1>
         <div className={styles.footerItems}>
             <div className={styles.item}>

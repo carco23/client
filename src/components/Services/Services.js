@@ -118,12 +118,12 @@ function Services() {
   const prevSlide = () => carouselRef.current.prev();
 
   return (
-    <div className={styles.skills} id='skills'>
+    <div className={styles.skills} id='services'>
         <div className={styles.text}>
             <h1>Our Services</h1>
             <p>We bring a combination of deep expertise, a track record of impactful reforms, and a collaborative approach to every project. By working closely with partners and clients, we create solutions that are efficient, scalable, and designed for lasting impact in health and social care systems.</p>
         </div>
-        <div className="antd-slider">
+        <div className="antd-slider sg">
       <Button className="arrow-button" onClick={prevSlide} icon={<LeftOutlined />} />
       {isMobile ? (
       <Carousel ref={carouselRef} dots={{ className: 'custom-dots' }}>

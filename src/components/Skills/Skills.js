@@ -138,7 +138,7 @@ function Skills() {
             <h1>Our Team</h1>
             <p>Team experienced professionals Reforming for Sustainable Impact. We are proficient in:</p>
         </div>
-        <div className="antd-slider">
+        <div className="antd-slider ss">
       <Button className="arrow-button" onClick={prevSlide} icon={<LeftOutlined />} />
       {isMobile ? (
       <Carousel ref={carouselRef} dots={{ className: 'custom-dots' }}>

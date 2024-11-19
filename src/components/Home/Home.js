@@ -6,12 +6,12 @@ import TypingEffect from './TypingEffect';
 
 function Home() {
   return (
-    <div className={styles.home}>
+    <div className={styles.home} id='home'>
       <div className={styles.left}>
         <img src={LandingImage1} />
-        <TypingEffect text={'Performators: Creating Successful Legacy'} />
+        <TypingEffect text={'Performators: pathways to successful government reforms'} />
         <p>
-          Since its establishment in 2024, Performators has consulted 30+ countries on three different continents globally
+          The goal of its establishment is to consult the Governments to Plan, Implement and monitor needed reforms.
         </p>
       </div>
       <div className={styles.right}>

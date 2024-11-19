@@ -157,8 +157,9 @@
         height: 4.5vh;
         font-size: 0.9rem;
         border-radius: 10px;
+        display: none;
     }
     .aboutUs {
-        height: 145vh;
+        height: 170vh;
     }
 }

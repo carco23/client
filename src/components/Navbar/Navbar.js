@@ -3,7 +3,7 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
 import Logo from '../../assets/iconOriginal.svg';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import Hamburger from '../../assets/hamburger.svg'
 import { useState, useEffect } from 'react';
 
@@ -41,12 +41,12 @@ function Navbar() {
       <div className={styles.menu} style={toggledStyle} >
         <div className={styles.menuItems}>
         <img src={require('../../assets/close.png')} onClick={closeMenu} />
-        <Link to="/" className={location.pathname === '/' ? styles.active : ''}>Home</Link>
-        <Link to="aboutUs" smooth={true} duration={500} className={location.pathname === '/about' ? styles.active : ''}>About Us</Link>
+        <Link to="home" smooth={true} duration={500} className={location.pathname === '/' ? styles.active : ''}>Home</Link>
+        <Link to="aboutUs" smooth={true} duration={500} className={location.pathname === '/about' ? styles.active : ''}>Who we are</Link>
         <Link to="skills" smooth={true} duration={500} className={location.pathname === '/team' ? styles.active : ''}>Our Team</Link>
-        <Link to="/highlights" className={location.pathname === '/highlights' ? styles.active : ''}>Highlights</Link>
-        <Link to="/services" className={location.pathname === '/services' ? styles.active : ''}>Services</Link>
-        <Link to="/contact" className={location.pathname === '/contact' ? styles.active : ''}>Contact Us</Link>
+        <Link to="highlights" smooth={true} duration={500} className={location.pathname === '/highlights' ? styles.active : ''}>Our Success Stories</Link>
+        <Link to="services" smooth={true} duration={500} className={location.pathname === '/services' ? styles.active : ''}>Our Services</Link>
+        <Link to="contact" smooth={true} duration={500} className={location.pathname === '/contact' ? styles.active : ''}>Contact Us</Link>
         </div>
       </div>
       <input type="text" placeholder="    Search" />
@@ -56,10 +56,10 @@ function Navbar() {
       <img src={Logo} alt="Logo" className={styles.logo} />
       <div className={styles.navbarItems}>
         <Link to="/" className={styles.navbarLink}>Home</Link>
-        <Link to="aboutUs" smooth={true} duration={500} className={styles.navbarLink}>About Us</Link>
+        <Link to="aboutUs" smooth={true} duration={500} className={styles.navbarLink}>Who We Are</Link>
         <Link to="skills" smooth={true} duration={500} className={styles.navbarLink}>Our Team</Link>
-        <Link to="/highlights" className={styles.navbarLink}>Highlights</Link>
-        <Link to="/services" className={styles.navbarLink}>Services</Link>
+        <Link to="/highlights" className={styles.navbarLink}>Our Success Stories</Link>
+        <Link to="/services" className={styles.navbarLink}>Our Services</Link>
         <Link to="/contact" className={styles.navbarLink}>Contact Us</Link>
       </div>
       <input type="text" placeholder="    Search" />

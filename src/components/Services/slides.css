@@ -146,4 +146,7 @@
     height: 100%;
     margin-bottom: 0%;
   }
+  .sg {
+    top: 25% !important;
+  }
 }

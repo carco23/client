@@ -63,7 +63,7 @@
 @media (max-width: 480px) {
     .text {
         margin-top: 30%;
-        top: 5%;
+        top: 15%;
         left: 50%;
         transform: translate(-50%);
         text-align: center;

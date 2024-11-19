@@ -80,7 +80,7 @@
 }
 @media (max-width: 480px) {
     .highlights {
-        height: 150vh;
+        height: 165vh;
     }
     .text {
         width: 90%;
@@ -100,7 +100,7 @@
     }
     .text h1 {
         font-size: 6vw;
-        width: 55%;
+        width: 67%;
         height: 4vh;
     }
     .story {
@@ -112,7 +112,8 @@
         left: 0%;
         align-items: center;
         justify-content: space-evenly;
-        top: -5%;
+        height: 55%;
+        top: 0%;
     }
     .stories div:nth-child(1) {
         height: 16vh;
@@ -144,14 +145,35 @@
     .highlightsImg {
         left: 50%;
         transform: translate(-50%);
-        top: -33vh;
+        top: -38vh;
         width: 45%;
     }
     .story img {
         position: relative;
-
         left: 0%;
         width: 20px;
         height: 20px;
+    }
+    .learnMore {
+        position: relative;
+        left: 50%;
+        top: 1%;
+        width: 20%;
+        height: 3.5vh;
+        transform: translate(-50%);
+        background: rgba(26, 112, 155, 0.1);
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        color: rgba(26, 112, 155);
+        cursor: pointer;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2.4vw;
+        font-weight: 400;
+        transition: 0.5s;
+    }
+    .learnMore a {
+        text-decoration: none;
+        color: rgba(26, 112, 155);
     }
 }

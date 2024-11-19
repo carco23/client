@@ -49,7 +49,12 @@ function About() {
         The progress Georgia has achieved in implementing the DRG funding model, in regulating medicines prices and in improving access to oncology medicines illustrates the power of policies aimed at UHC.
         <br/>
         <br/>
-        These are effective policies that are having immediate, tangible impact on financial protection for Georgian population and this generates optimism for us in WHO as we seek to support other Member States in these areas.</p>
+        These are effective policies that are having immediate, tangible impact on financial protection for Georgian population and this generates optimism for us in WHO as we seek to support other Member States in these areas.
+        <br/>
+        <br/>
+        At Performators, we are PERformer ReFORMATORS with steadfast commitment to enhancing national welfare through the implementation of innovative Reforms. 
+Our competencies and experience have equipped us with a unique blend of strategic business insight and a profound sense of public duty.
+        </p>
         </div>
         {isMobile ? (
           <div className="antd-slider">
