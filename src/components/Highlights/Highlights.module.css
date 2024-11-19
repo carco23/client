@@ -130,17 +130,28 @@
     }
     .story h1 {
         font-size: 3vw;
+        position: relative;
+        bottom: 20%;
     }
     .story li {
         font-size: 2vw;
         text-align: center;
         font-weight: bold;
         color: rgb(140, 140, 140);
+        position: relative;
+        bottom: 20%;
     }
     .highlightsImg {
         left: 50%;
         transform: translate(-50%);
         top: -33vh;
         width: 45%;
+    }
+    .story img {
+        position: relative;
+
+        left: 0%;
+        width: 20px;
+        height: 20px;
     }
 }

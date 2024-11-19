@@ -22,6 +22,9 @@ function Footer() {
                 <p>Tbilisi, Georgia</p>
             </div>
         </div>
+        <div className={styles.rights}>
+            <h2>Copyright © 2024 - All Rights Reserved</h2>
+        </div>
     </div>
   );
 }

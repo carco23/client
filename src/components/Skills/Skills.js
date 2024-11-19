@@ -148,7 +148,7 @@ function Skills() {
                 <div className='slider-left'>
                     <img src={slide.image} />
                 </div>
-                <div className='slider-right'>
+                <div className='slider-right second'>
                     <h1>{slide.name}</h1>
                     <p>{slide.description}</p>
                 </div>

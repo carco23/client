@@ -39,3 +39,40 @@
     color: #1A709B;
     font-weight: lighter;
 }
+.rights {
+    width: 100%;
+    height: 5vh;
+    background: rgba(26, 112, 155, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rights h2 {
+    font-size: 2vw;
+    font-weight: lighter;
+}
+
+@media (max-width: 480px) {
+    .footerItems {
+        flex-direction: column;
+        align-items: start;
+        left: 5%;
+        top: -3%;
+    }
+    .item img {
+        width: 20px;
+    }
+    .footer h1 {
+        font-size: 5vw;
+        width: 19%;
+        height: 4vh;
+        position: relative;
+        left: 5%;
+    }
+    .footer {
+        align-items: start;
+    }
+    .item p {
+        font-size: 3vw;
+    }
+}

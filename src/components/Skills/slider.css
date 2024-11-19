@@ -142,4 +142,8 @@
       height: 70%;
       margin-bottom: 10%;
     }
+    .second {
+      height: 70% !important;
+      margin-bottom: 16% !important;
+    }
   }

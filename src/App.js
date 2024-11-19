@@ -23,7 +23,7 @@ function App() {
         <Skills/>
         <Highlights/>
         <Services/>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </Router>
   );
