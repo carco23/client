@@ -2,12 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Contact from './components/Contact/Contact';
+import Helper from './components/Contact/helper';
 import Navbar from './components/Navbar/Navbar';
 import Skills from './components/Skills/Skills';
 import Highlights from './components/Highlights/Highlights';
 import Services from './components/Services/Services';
 import Footer from './components/Footer/footer'
+import Page from './components/highlightsPage/page';
 
 function App() {
   return (
@@ -15,14 +16,9 @@ function App() {
       <div>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/" element={<Helper />} />
+          <Route path='/highlights' element={<Page/>} />
         </Routes>
-        <About/>
-        <Skills/>
-        <Highlights/>
-        <Services/>
         <Footer/>
       </div>
     </Router>

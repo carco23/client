@@ -16,11 +16,14 @@
     justify-content: space-around;
     align-items: center;
 }
+.navbar a {
+    text-decoration: none;
+}
 .hamburger {
     display: none;
 }
 .logo {
-    width: 7%;
+    width: 9%;
 }
 
 .navbarItems {
@@ -67,13 +70,13 @@
         display: none;
     }
     .logo {
-        width: 22%;
+        width: 25%;
         position: relative;
-        right: 20%;
+        right: 18%;
     }
     .hamburger {
         display: flex;
-        margin-right: 48%;
+        margin-right: 46%;
     }
     .navbar input {
         width: 18%;

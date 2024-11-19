@@ -2,8 +2,8 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
-import Logo from '../../assets/performatorLogo.svg';
-import { Link } from 'react-scroll';
+import Logo from '../../assets/iconOriginal.svg';
+import { Link } from 'react-router-dom';
 import Hamburger from '../../assets/hamburger.svg'
 import { useState, useEffect } from 'react';
 
