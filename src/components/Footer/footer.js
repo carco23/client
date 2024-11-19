@@ -15,7 +15,7 @@ function Footer() {
             </div>
             <div className={styles.item}>
                 <img src={Phone} />
-                <p>+995500101870</p>
+                <a href={`tel:995500101870`}>+995500101870</a>
             </div>
             <div className={styles.item}>
                 <img src={Location} />

@@ -42,7 +42,7 @@ function About() {
   return (
     <div className={styles.aboutUs} id='aboutUs'>
       <div className={styles.text}>
-        <h1>About Us</h1>
+        <h1>Who We Are</h1>
         <p>Your approach towards health for peace is inspirational – with valuable lessons for health for peace programming elsewhere in the Region. 
         <br/>
         <br/>

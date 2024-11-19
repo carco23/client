@@ -70,13 +70,11 @@
         display: none;
     }
     .logo {
-        width: 25%;
-        position: relative;
-        right: 18%;
+        width: 100%;
     }
     .hamburger {
         display: flex;
-        margin-right: 46%;
+        margin-right: 49%;
     }
     .navbar input {
         width: 18%;
@@ -104,6 +102,14 @@
     font-size: 4vw;
     font-family: "Roboto", sans-serif;
     color: #144761;
+}
+.faq {
+    width: 100%;
+}
+.logoHref {
+    width: 25%;
+    position: relative;
+    right: 21%;
 }
 .menuItems {
     display: flex;

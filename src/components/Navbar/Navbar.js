@@ -6,6 +6,7 @@ import Logo from '../../assets/iconOriginal.svg';
 import { Link } from 'react-scroll';
 import Hamburger from '../../assets/hamburger.svg'
 import { useState, useEffect } from 'react';
+import FAQ from '../../assets/FAQ.svg'
 
 function Navbar() {
   const location = useLocation();
@@ -37,19 +38,19 @@ function Navbar() {
     {isMobile ? (
       <>
       <img className={styles.hamburger} src={Hamburger} onClick={openMenu} />
-      <img src={Logo} alt="Logo" className={styles.logo} />
+      <a href='/' className={styles.logoHref}><img src={Logo} alt="Logo" className={styles.logo} /></a>
       <div className={styles.menu} style={toggledStyle} >
         <div className={styles.menuItems}>
         <img src={require('../../assets/close.png')} onClick={closeMenu} />
-        <Link to="home" smooth={true} duration={500} className={location.pathname === '/' ? styles.active : ''}>Home</Link>
-        <Link to="aboutUs" smooth={true} duration={500} className={location.pathname === '/about' ? styles.active : ''}>Who we are</Link>
-        <Link to="skills" smooth={true} duration={500} className={location.pathname === '/team' ? styles.active : ''}>Our Team</Link>
-        <Link to="highlights" smooth={true} duration={500} className={location.pathname === '/highlights' ? styles.active : ''}>Our Success Stories</Link>
-        <Link to="services" smooth={true} duration={500} className={location.pathname === '/services' ? styles.active : ''}>Our Services</Link>
-        <Link to="contact" smooth={true} duration={500} className={location.pathname === '/contact' ? styles.active : ''}>Contact Us</Link>
+        <Link onClick={closeMenu} to="home" smooth={true} duration={500} className={location.pathname === '/' ? styles.active : ''}>Home</Link>
+        <Link onClick={closeMenu} to="aboutUs" smooth={true} duration={500} className={location.pathname === '/about' ? styles.active : ''}>Who we are</Link>
+        <Link onClick={closeMenu} to="skills" smooth={true} duration={500} className={location.pathname === '/team' ? styles.active : ''}>Our Team</Link>
+        <Link onClick={closeMenu} to="highlights" smooth={true} duration={500} className={location.pathname === '/highlights' ? styles.active : ''}>Our Success Stories</Link>
+        <Link onClick={closeMenu} to="services" smooth={true} duration={500} className={location.pathname === '/services' ? styles.active : ''}>Our Services</Link>
+        <Link onClick={closeMenu} to="contact" smooth={true} duration={500} className={location.pathname === '/contact' ? styles.active : ''}>Contact Us</Link>
         </div>
       </div>
-      <input type="text" placeholder="    Search" />
+      <Link to="contact" smooth={true} duration={500} style={{width: '6%', marginRight: '7%'}}><img src={FAQ} className={styles.faq} /></Link>
       </>
     ) : (
       <>

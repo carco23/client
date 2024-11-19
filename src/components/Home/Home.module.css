@@ -150,7 +150,11 @@
         position: relative;
         bottom: 30%;
     }
+    .right a {
+        color: rgba(26, 112, 155);
+    }
 }
+
 
 
 

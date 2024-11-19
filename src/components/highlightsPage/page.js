@@ -2,10 +2,11 @@ import React from 'react';
 import styles from './page.module.css'
 import Globe from '../../assets/globe.svg'
 import HighlightsImg from '../../assets/highlightsImg.svg'
+import { Link } from 'react-router-dom';
 
 function Page() {
   return <div className={styles.page}>
-    <button className={styles.return}>Return</button>
+    <button className={styles.return}><Link to='/'>Return</Link></button>
     <div className={styles.left}>
     <div className={styles.stories}>
             <div className={styles.story}>

@@ -144,4 +144,8 @@
         font-size: 2.5vw;
         left: 12%;
     }
+    a {
+        text-decoration: none;
+        color: rgba(26, 112, 155);
+    }
 }

@@ -75,4 +75,9 @@
     .item p {
         font-size: 3vw;
     }
+    .item a {
+        font-size: 3vw;
+        position: relative;
+        left: 5%;
+    }
 }

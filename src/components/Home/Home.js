@@ -3,20 +3,21 @@ import styles from './Home.module.css'
 import LandingImage1 from '../../assets/landingImage1.svg'
 import LandingImage2 from '../../assets/landingImage6.svg'
 import TypingEffect from './TypingEffect';
+import { Link } from 'react-scroll';
 
 function Home() {
   return (
     <div className={styles.home} id='home'>
       <div className={styles.left}>
         <img src={LandingImage1} />
-        <TypingEffect text={'Performators: pathways to successful government reforms'} />
+        <TypingEffect text={'Performators: Pathways to successful Government reforms'} />
         <p>
           The goal of its establishment is to consult the Governments to Plan, Implement and monitor needed reforms.
         </p>
       </div>
       <div className={styles.right}>
         <img src={LandingImage2} />
-        <button>See more </button>
+        <button><Link to="services" smooth={true} duration={500}>See More</Link></button>
       </div>
     </div>
   );
