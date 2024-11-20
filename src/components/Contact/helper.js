@@ -14,6 +14,7 @@ function Helper() {
         <Skills/>
         <Highlights/>
         <Services/>
+        <Footer/>
   </>;
 }
 

@@ -1,11 +1,11 @@
 .skills {
     width: 100%;
-    height: 100vh;
+    height: 110vh;
 }
 .text {
     position: relative;
     left: 10%;
-    top: 100px;
+    top: 150px;
     width: 70%;
 }
 .text h1 {

@@ -19,7 +19,6 @@ function App() {
           <Route path="/" element={<Helper />} />
           <Route path='/highlights' element={<Page/>} />
         </Routes>
-        <Footer/>
       </div>
     </Router>
   );

@@ -72,7 +72,9 @@
     transform: translateY(-50%);
     z-index: 1;
   }
-  
+  .sg {
+    top: 30% !important;
+  }
   .arrow-button:first-child {
     left: -30px;
   }

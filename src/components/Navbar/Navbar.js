@@ -13,11 +13,17 @@ function Navbar() {
 
   const [isOpen, setIsOpen] = useState(false)
 
+  const [number, setNumber] = useState(1)
+
   const openMenu = () => {
     setIsOpen(true)
   }
   const closeMenu = () => {
     setIsOpen(false)
+  }
+
+  const numberChange = (num) => {
+    setNumber(num)
   }
 
   const toggledStyle = isOpen
@@ -50,20 +56,23 @@ function Navbar() {
         <Link onClick={closeMenu} to="contact" smooth={true} duration={500} className={location.pathname === '/contact' ? styles.active : ''}>Contact Us</Link>
         </div>
       </div>
-      <Link to="contact" smooth={true} duration={500} style={{width: '6%', marginRight: '7%'}}><img src={FAQ} className={styles.faq} /></Link>
+      <Link to="contact" smooth={true} duration={1000} style={{width: '6%', marginRight: '7%'}}><img src={FAQ} className={styles.faq} /></Link>
+      {isOpen && (
+              <div className={styles.blur}></div>
+      )}
       </>
     ) : (
       <>
       <img src={Logo} alt="Logo" className={styles.logo} />
       <div className={styles.navbarItems}>
-        <Link to="/" className={styles.navbarLink}>Home</Link>
-        <Link to="aboutUs" smooth={true} duration={500} className={styles.navbarLink}>Who We Are</Link>
-        <Link to="skills" smooth={true} duration={500} className={styles.navbarLink}>Our Team</Link>
-        <Link to="/highlights" className={styles.navbarLink}>Our Success Stories</Link>
-        <Link to="/services" className={styles.navbarLink}>Our Services</Link>
-        <Link to="/contact" className={styles.navbarLink}>Contact Us</Link>
+        <Link onClick={() => numberChange(1)} style={number === 1 ? {borderBottom: '3px solid #BC87D6', height: '5vh', marginTop: '3.5%'} : ''} to="home" smooth={true} duration={500} className={styles.navbarLink}>Home</Link>
+        <Link onClick={() => numberChange(2)} style={number === 2 ? {borderBottom: '3px solid #BC87D6', height: '5vh', marginTop: '3.5%'} : ''} to="aboutUs" smooth={true} duration={500} className={styles.navbarLink}>Who We Are</Link>
+        <Link onClick={() => numberChange(3)} style={number === 3 ? {borderBottom: '3px solid #BC87D6', height: '5vh', marginTop: '3.5%'} : ''} to="skills" smooth={true} duration={500} className={styles.navbarLink}>Our Team</Link>
+        <Link onClick={() => numberChange(4)} style={number === 4 ? {borderBottom: '3px solid #BC87D6', height: '5vh', marginTop: '3.5%'} : ''} to="highlights" smooth={true} duration={500} className={styles.navbarLink}>Our Success Stories</Link>
+        <Link onClick={() => numberChange(5)} style={number === 5 ? {borderBottom: '3px solid #BC87D6', height: '5vh', marginTop: '3.5%'} : ''} to="services" smooth={true} duration={500} className={styles.navbarLink}>Our Services</Link>
+        <Link onClick={() => numberChange(6)} style={number === 6 ? {borderBottom: '3px solid #BC87D6', height: '5vh', marginTop: '3.5%'} : ''} to="contact" smooth={true} duration={500} className={styles.navbarLink}>Contact Us</Link>
       </div>
-      <input type="text" placeholder="    Search" />
+      <Link to="contact" onClick={() => numberChange(6)} smooth={true} duration={1000} style={{width: '2%', marginRight: '3%', cursor: 'pointer'}}><img src={FAQ} className={styles.faq} /></Link>
       </>
     )}
     </div>

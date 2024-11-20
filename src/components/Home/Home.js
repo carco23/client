@@ -17,7 +17,7 @@ function Home() {
       </div>
       <div className={styles.right}>
         <img src={LandingImage2} />
-        <button><Link to="services" smooth={true} duration={500}>See More</Link></button>
+        <button><Link to="services" smooth={true} duration={1000}>See More</Link></button>
       </div>
     </div>
   );

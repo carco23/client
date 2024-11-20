@@ -53,7 +53,7 @@ function About() {
         <br/>
         <br/>
         At Performators, we are PERformer ReFORMATORS with steadfast commitment to enhancing national welfare through the implementation of innovative Reforms. 
-Our competencies and experience have equipped us with a unique blend of strategic business insight and a profound sense of public duty.
+        Our competencies and experience have equipped us with a unique blend of strategic business insight and a profound sense of public duty.
         </p>
         </div>
         {isMobile ? (
@@ -109,7 +109,6 @@ Our competencies and experience have equipped us with a unique blend of strategi
           </div>
         </div>
         )}
-        <button>Learn More</button>
     </div>
   );
 }

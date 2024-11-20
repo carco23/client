@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    height: 25vh;
+    height: 20vh;
     background: rgba(26, 112, 155, 0.1);
     margin: 0;
     padding: 0;
@@ -48,14 +48,20 @@
     justify-content: center;
 }
 .rights h2 {
-    font-size: 2vw;
+    font-size: 1vw;
     font-weight: lighter;
+}
+.item a {
+    color: #1A709B;
+    text-decoration: none;
 }
 
 @media (max-width: 480px) {
     .footerItems {
         flex-direction: column;
         align-items: start;
+        justify-content: space-around;
+        height: 100%;
         left: 5%;
         top: -3%;
     }
@@ -74,11 +80,14 @@
     }
     .item p {
         font-size: 3vw;
+
     }
     .item a {
         font-size: 3vw;
-        position: relative;
-        left: 5%;
         color: #1A709B;
+        text-decoration: none;
+    }
+    .rights h2 {
+        font-size: 2vw;
     }
 }

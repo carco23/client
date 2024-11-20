@@ -42,6 +42,8 @@
     font-size: 1vw;
     height: 30%;
     width: 95%;
+    position: relative;
+    bottom: 10%;
   }
   .slider-left img {
     width: 60%;
@@ -79,7 +81,9 @@
   .arrow-button:last-child {
     right: -30px;
   }
-  
+  .ss {
+    top: 40% !important;
+  }
   .ant-carousel .slick-dots li button {
     transform: translate(0%, 250%);
     width: 12px;
