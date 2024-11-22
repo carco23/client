@@ -9,14 +9,6 @@ function Highlights() {
     <div className={styles.highlights} id='highlights'>
         <div className={styles.text}>
             <h1>Our Success Stories</h1>
-            <p>
-                Explore our success stories and 
-                witness the impact firsthand. 
-                From small startups to established 
-                enterprises, our solutions have driven growth, 
-                streamlined operations, and boosted productivity. 
-                Each story highlights real transformations.
-            </p>
         </div>
         <img src={SeeForYourself} className={styles.highlightsImg}/>
         <div className={styles.stories}>

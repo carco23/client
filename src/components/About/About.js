@@ -43,21 +43,22 @@ function About() {
     <div className={styles.aboutUs} id='aboutUs'>
       <div className={styles.text}>
         <h1>Who We Are</h1>
-        <p>Your approach towards health for peace is inspirational – with valuable lessons for health for peace programming elsewhere in the Region. 
-        <br/>
-        <br/>
-        The progress Georgia has achieved in implementing the DRG funding model, in regulating medicines prices and in improving access to oncology medicines illustrates the power of policies aimed at UHC.
-        <br/>
-        <br/>
-        These are effective policies that are having immediate, tangible impact on financial protection for Georgian population and this generates optimism for us in WHO as we seek to support other Member States in these areas.
-        <br/>
-        <br/>
+        <p>
         At Performators, we are PERformer ReFORMATORS with steadfast commitment to enhancing national welfare through the implementation of innovative Reforms. 
         Our competencies and experience have equipped us with a unique blend of strategic business insight and a profound sense of public duty.
+        <br/>
+        <br/>
+        <div style={{border: '2px solid #467DCF', borderRadius: '5px'}}>
+        <p style={{color: '#467DCF', width: '100%'}}>Your approach towards health for peace is inspirational – with valuable lessons for health for peace programming elsewhere in the Region.</p>
+        <p style={{color: '#467DCF', width: '100%'}}>The progress Georgia has achieved in implementing the DRG funding model, in regulating medicines prices and in improving access to oncology medicines illustrates the power of policies aimed at UHC.</p>
+        <p style={{color: '#467DCF', width: '100%'}}>These are effective policies that are having immediate, tangible impact on financial protection for Georgian population and this generates optimism for us in WHO as we seek to support other Member States in these areas.</p>
+        <p style={{color: '#467DCF', width: '100%'}}>"...There are many good examples… I was recently in Tbilisi, Georgia, where I discussed with Minister Azarashvili how he managed through a joint work for price regulation including pharmaceutical reference pricing to decrease prices on oncological drugs by 45%." - WHO RC73</p>
+        <p>Dr. Hans Kluge - WHO Regional Director</p>
+        </div>
         </p>
         </div>
         {isMobile ? (
-          <div className="antd-slider">
+          <div className="antd-slider ssg">
           {/* <Button className="arrow-button" onClick={prevSlide} icon={<LeftOutlined />} /> */}
     
             <Carousel

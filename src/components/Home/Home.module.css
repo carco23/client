@@ -46,7 +46,7 @@
     align-items: center;
 }
 .right img {
-    width: 70%;
+    width: 80%;
     position: relative;
     top: 8%;
     transition: 0.5s;
@@ -123,7 +123,7 @@
         font-size: 1.5rem;
     }
     .right img {
-        width: 120%;
+        width: 160%;
         top: 30%;
     }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Home.module.css'
 import LandingImage1 from '../../assets/landingImage1.svg'
-import LandingImage2 from '../../assets/landingImage6.svg'
+import LandingImage2 from '../../assets/landingImage8.svg'
 import TypingEffect from './TypingEffect';
 import { Link } from 'react-scroll';
 

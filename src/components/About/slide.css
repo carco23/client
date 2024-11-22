@@ -6,7 +6,9 @@
     position: relative;
     transform: translate(0%, -20%);
   }
-  
+  .ssg {
+    transform: translate(0%, -30%);
+  }
   .ant-carousel .slick-slide {
     display: flex;
     justify-content: center;
