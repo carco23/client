@@ -153,12 +153,10 @@
     .right a {
         color: rgba(26, 112, 155);
     }
+    .left p {
+        color: black;
+    }
 }
-
-
-
-
-
 
 
 
