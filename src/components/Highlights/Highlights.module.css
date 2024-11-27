@@ -84,10 +84,9 @@
 .learnMore {
     position: relative;
     left: 50%;
-    top: 5%;
     width: 8%;
     height: 4.5vh;
-    transform: translate(-50%);
+    transform: translate(-50%, 350%);
     background: rgba(26, 112, 155, 0.1);
     border: none;
     outline: none;
@@ -154,6 +153,10 @@
         transform: translate(0%);
         height: 8.5vh;
     }
+    .stories div:nth-child(5) {
+        transform: translate(0%);
+        height: 10vh;
+    }
     .story h1 {
         font-size: 3vw;
         position: relative;
@@ -182,13 +185,12 @@
     .learnMore {
         position: relative;
         left: 50%;
-        top: 1%;
         width: 20%;
         height: 3.5vh;
-        transform: translate(-50%);
+        transform: translate(-50%, 350%);
         background: rgba(26, 112, 155, 0.1);
         border: none;
-        outline: none;
+        outline: none;  
         border-radius: 20px;
         color: rgba(26, 112, 155);
         cursor: pointer;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './About.module.css'
-import Zurab from '../../assets/zurab.svg'
+import Zurab from '../../assets/zurab1.svg'
 import Ilia from '../../assets/ilia.svg'
 import { useState, useEffect } from 'react';
 import { Carousel, Card, Button } from 'antd';

@@ -157,6 +157,7 @@
         font-size: 3.6vw;
         width: 90%;
         height: 70%;
+        font-weight: 600;
     }
     .aboutUs button {
         left: 50%;
@@ -181,5 +182,8 @@
     .text p div {
         padding-left: 5px;
 
+    }
+    .text p {
+        font-weight: 600;
     }
 }
